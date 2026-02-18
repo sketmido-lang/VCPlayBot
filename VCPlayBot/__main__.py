@@ -1,8 +1,12 @@
 import requests
+import sys
+import yt_dlp
+
+# خدعة برمجية: إيهام النظام بأن youtube_dl هي نفسها yt_dlp
+sys.modules["youtube_dl"] = yt_dlp
 from pyrogram import Client as Bot
 from pyrogram.session import Session
 Session.TIME_OFFSET = 0
-
 from VCPlayBot.config import API_HASH
 from VCPlayBot.config import API_ID
 from VCPlayBot.config import BG_IMAGE
