@@ -1,4 +1,4 @@
-https://github.com/kurimuzon/pyrogram/archive/v1.4.16.zip
+git+https://github.com/pyrogram/pyrogram.git@v1.4.16
 tgcrypto==1.2.5
 pytgcalls[pyrogram]==3.0.0.dev24
 python-dotenv
