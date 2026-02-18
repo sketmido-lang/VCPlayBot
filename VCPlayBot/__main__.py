@@ -1,5 +1,7 @@
 import requests
 from pyrogram import Client as Bot
+from pyrogram.session import Session
+Session.TIME_OFFSET = 0
 
 from VCPlayBot.config import API_HASH
 from VCPlayBot.config import API_ID
