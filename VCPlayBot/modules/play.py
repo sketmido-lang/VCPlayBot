@@ -128,7 +128,12 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     os.remove("background.png")
 
 
-@Client.on_message(filters.command("playlist") & filters.group & ~filters.edited)
+@Client.on_message(filters.command("playlist") & filters.group)
+async def playlist(client, message):
+    global que
+    if message.chat.id in DISABLED_GROUPS:
+        return    
+    queue = que.get(message.chat.id)
 async def playlist(client, message):
     global que
     if message.chat.id in DISABLED_GROUPS:
