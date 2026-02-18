@@ -1,6 +1,6 @@
-git+https://github.com/pyrogram/pyrogram.git@v1.4.16
-tgcrypto==1.2.5
-pytgcalls[pyrogram]==3.0.0.dev24
+pyrogram
+tgcrypto
+pytgcalls
 python-dotenv
 yt-dlp
 youtube_search_python
