@@ -1,8 +1,8 @@
-pyrogram
-tgcrypto
-pytgcalls[pyrogram]
+pyrogram==1.4.16
+tgcrypto==1.2.5
+pytgcalls[pyrogram]==3.0.0.dev24
 python-dotenv
-youtube_dl
+yt-dlp
 youtube_search_python
 requests
 aiohttp
